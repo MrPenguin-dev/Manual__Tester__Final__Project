@@ -15,6 +15,7 @@ public class RandomUser {
     public int yearOfBirth;
 
     public RandomUser() {
+
         Faker faker = new Faker();
         firstName = faker.name().firstName();
         lastName = faker.name().lastName();

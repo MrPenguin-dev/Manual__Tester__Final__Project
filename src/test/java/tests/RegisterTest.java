@@ -6,6 +6,7 @@ import pageobjects.RegisterPage;
 import utils.RandomUser;
 
 public class RegisterTest extends BaseTest {
+
     @Test
     void shouldRegisterNewUserWhenAllMandatoryDataIsProvided() {
 

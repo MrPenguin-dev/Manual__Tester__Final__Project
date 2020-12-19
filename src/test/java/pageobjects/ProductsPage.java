@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ProductsPage extends BasePage {
+
     @FindBy(css = ".product_list .product-container")
     List<WebElement> productsContainers;
 
