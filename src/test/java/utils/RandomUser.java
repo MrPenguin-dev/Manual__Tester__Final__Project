@@ -1,7 +1,6 @@
 package utils;
 
 import com.github.javafaker.Faker;
-import org.w3c.dom.ls.LSOutput;
 
 public class RandomUser {
 

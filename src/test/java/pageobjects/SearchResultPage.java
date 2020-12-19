@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public class SearchResultPage extends BasePage {
-
     @FindBy(id = ".product_list .product-name")
     List<WebElement> productsNames;
 

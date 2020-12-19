@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.RandomUser;
 
 public class RegisterPage extends BasePage{
-
     @FindBy(id = "customer_firstname")
     WebElement customerFirstName;
 

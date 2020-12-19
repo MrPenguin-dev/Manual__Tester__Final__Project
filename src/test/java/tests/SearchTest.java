@@ -6,9 +6,9 @@ import pageobjects.HomePage;
 import pageobjects.SearchResultPage;
 
 public class SearchTest extends BaseTest {
-
     @Test
     void shouldReturnCorrectProductListWhenPositiveSearchPhraseIsUsed() {
+
         HomePage homePage = new HomePage(driver, wait);
         homePage.openPage();
         homePage.searchForProduct("dress");
