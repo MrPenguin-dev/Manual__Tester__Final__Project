@@ -6,6 +6,7 @@ import pageobjects.HomePage;
 import pageobjects.ProductsPage;
 
 public class CartTest extends BaseTest {
+
     @Test
     void shouldBeAbleAddProductToTheCart() {
         ProductsPage productsPage = goToProductCategoryPage(0);

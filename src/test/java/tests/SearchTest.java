@@ -6,6 +6,7 @@ import pageobjects.HomePage;
 import pageobjects.SearchResultPage;
 
 public class SearchTest extends BaseTest {
+
     @Test
     void shouldReturnCorrectProductListWhenPositiveSearchPhraseIsUsed() {
 
