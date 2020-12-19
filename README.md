@@ -19,7 +19,7 @@
 
 ## Added with table:
 
-| to pageobjects:  | to tests:    | to utils   |
+| to pageobjects:  | to tests:    | to utils:  |
 | ---------------- |:------------:|-----------:|
 | BasePage         | BaseTest     | RandomUser |
 | HomePage         | CartTest     |            |
