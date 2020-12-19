@@ -19,12 +19,6 @@
 
 ## Added with table:
 
-|  Packages:  | 
-|  ---------  |
-| pageobjects |
-|    tests    |
-|    utils    |
-
 | to pageobjects:  | to tests:    | to utils   |
 | ---------------- |:------------:|-----------:|
 | BasePage         | BaseTest     | RandomUser |
