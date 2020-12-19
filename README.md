@@ -26,10 +26,11 @@
 |    utils    |
 
 | to pageobjects:  | to tests:    | to utils   |
-| BasePage         |:------------:|-----------:|
-| HomePage         | BaseTest     | RandomUser |
-| LoginPage        | CartTest     |            |
-| MyAccountPage    | LoginTest    |            |
-| ProductsPage     | LogOouTest   |            |
-| RegisterPage     | RegisterTest |            |
-| SearchResultPage | SearchTest   |            |
+| ---------------- |:------------:|-----------:|
+| BasePage         | BaseTest     | RandomUser |
+| HomePage         | CartTest     |            |
+| LoginPage        | LoginTest    |            |
+| MyAccountPage    | LogOouTest   |            |
+| ProductsPage     | RegisterTest |            |
+| RegisterPage     | SearchTest   |            |
+| SearchResultPage |              |            |
