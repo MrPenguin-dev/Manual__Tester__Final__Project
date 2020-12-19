@@ -9,6 +9,7 @@ public class SearchTest extends BaseTest {
 
     @Test
     void shouldReturnCorrectProductListWhenPositiveSearchPhraseIsUsed() {
+        // powinien zwrócić poprawną listę produktów, gdy użyto pozytywnej frazy wyszukiwania
 
         HomePage homePage = new HomePage(driver, wait);
         homePage.openPage();
@@ -17,5 +18,10 @@ public class SearchTest extends BaseTest {
         SearchResultPage searchResultPage = new SearchResultPage(driver, wait);
         Assertions.assertTrue(searchResultPage.isProductWithNameVisible("dress"));
         Assertions.assertEquals("7 results have been found.", searchResultPage.getSearchSummary());
+    }
+
+    @Test
+    void shouldNotReturnCorrectProductListWhenNegativeSearchPhraseIsUsed() {
+        // nie powinien zwracać prawidłowej listy produktów, gdy używana jest wykluczająca fraza wyszukiwania
     }
 }

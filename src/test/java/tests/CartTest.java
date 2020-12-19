@@ -9,6 +9,7 @@ public class CartTest extends BaseTest {
 
     @Test
     void shouldBeAbleAddProductToTheCart() {
+        // powinien być w stanie dodać produkt do koszyka
         ProductsPage productsPage = goToProductCategoryPage(0);
         productsPage.addRandomProductToCart();
         Assertions.assertEquals(1, productsPage.getCartSize());
@@ -16,6 +17,7 @@ public class CartTest extends BaseTest {
 
     @Test
     void shouldBeAbleAddMultipleProductsToTheCart() {
+        // powinien być w stanie dodać wiele produktów do koszyka
         ProductsPage productsPage = goToProductCategoryPage(1);
         productsPage.addRandomProductToCart();
         productsPage.addRandomProductToCart();
@@ -23,6 +25,7 @@ public class CartTest extends BaseTest {
     }
 
     private ProductsPage goToProductCategoryPage(int i) {
+        // przejdź do strony kategorii produktów
         HomePage homePage = new HomePage(driver, wait);
         homePage.openPage();
         homePage.goToProductCategoryByIndex(0);

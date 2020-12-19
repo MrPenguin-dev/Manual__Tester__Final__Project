@@ -19,4 +19,16 @@ public class RegisterTest extends BaseTest {
         RegisterPage registerPage = new RegisterPage(driver, wait);
         registerPage.registerUser(user);
     }
+
+    @Test
+    void shouldNoRegisterNewUserWhenNotAllMandatoryDataIsProvided() {
+        // nie należy rejestrować nowego użytkownika, gdy nie podano wszystkich obowiązkowych danych
+        // implementacja testu (korzystamy z imilementacji RandomUser, z LoginPage oraz z RegisterPage)
+    }
+
+    @Test
+    void shouldNoRegisterNewUserWhenIncorrectValueOfMandatoryDataIsProvided() {
+        // nie należy rejestrować nowego użytkownika w przypadku podania nieprawidłowej wartości obowiązkowych danych
+        // implementacja testu (korzystamy z implementacji RandomUser, z LoginPage oraz z RegisterPage)
+    }
 }
