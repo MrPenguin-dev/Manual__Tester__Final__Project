@@ -8,7 +8,7 @@
 6. Page factory
 
 ### for page:
-[Aotomationpractice](http://automationpractice.com )
+[Automationpractice](http://automationpractice.com )
 
 #### Added:
 1. Packages: (pageobjects, tests and utils)
