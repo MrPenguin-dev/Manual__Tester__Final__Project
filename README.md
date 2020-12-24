@@ -12,12 +12,13 @@
 
 ## Added:
 
+
 | to pageobjects:       | to tests:             | to utils:  |
 | --------------------- |:---------------------:|-----------:|
 | BasePage              | BaseTest              | RandomUser |
 | HomePage              | CartTest              |            |
-| LoginPage             | LoginTest             |            |
 | ExecutionOfOrdersPage | ExecutionOfOrdersTest |            |
+| LoginPage             | LoginTest             |            |
 | ProductsPage          | RegisterTest          |            |
 | RegisterPage          | SearchTest            |            |
 | SearchResultPage      |                       |            |
