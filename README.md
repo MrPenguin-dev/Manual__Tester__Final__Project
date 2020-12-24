@@ -19,12 +19,12 @@
 
 ## Added with table:
 
-| to pageobjects:  | to tests:    | to utils:  |
-| ---------------- |:------------:|-----------:|
-| BasePage         | BaseTest     | RandomUser |
-| HomePage         | CartTest     |            |
-| LoginPage        | LoginTest    |            |
-| MyAccountPage    | LogOouTest   |            |
-| ProductsPage     | RegisterTest |            |
-| RegisterPage     | SearchTest   |            |
-| SearchResultPage |              |            |
+| to pageobjects:  | to tests:     | to utils:  |
+| ---------------- |:-------------:|-----------:|
+| BasePage         | BaseTest      | RandomUser |
+| HomePage         | CartTest      |            |
+| LoginPage        | LoginTest     |            |
+| MyAccountPage    | MyAccountTest |            |
+| ProductsPage     | RegisterTest  |            |
+| RegisterPage     | SearchTest    |            |
+| SearchResultPage |               |            |
