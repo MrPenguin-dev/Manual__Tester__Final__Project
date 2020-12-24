@@ -1,29 +1,23 @@
-# README #
+# Manual-Tester-Auto-Test
+## Used:	
+1. Java 11+
+2. Maven
+3. Selenium WebDriver
+4. jUnit 5.x
+5. Page object pattern
+6. Page factory
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### for page:
+[Automationpractice](http://automationpractice.com )
 
-### What is this repository for? ###
+## Added:
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+| to pageobjects:       | to tests:             | to utils:  |
+| --------------------- |:---------------------:|-----------:|
+| BasePage              | BaseTest              | RandomUser |
+| HomePage              | CartTest              |            |
+| LoginPage             | LoginTest             |            |
+| ExecutionOfOrdersPage | ExecutionOfOrdersTest |            |
+| ProductsPage          | RegisterTest          |            |
+| RegisterPage          | SearchTest            |            |
+| SearchResultPage      |                       |            |
