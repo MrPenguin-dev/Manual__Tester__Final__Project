@@ -10,14 +10,7 @@
 ### for page:
 [Automationpractice](http://automationpractice.com )
 
-#### Added:
-1. Packages: (pageobjects, tests and utils)
-2. to pageobjects: (BasePage, HomePage, LoginPage, MyAccountPage, ProductsPage, RegisterPage, SearchResultPage)
-3. to tests: (BaseTest, CartTest, LoginTest, LogOutTest, RegisterTest, SearchTest)
-4. to utils: (RandomUser) 
-5. some tests: (CartTest with assertion, RegisterTest and SearchTest with assertion)
-
-## Added with table:
+## Added:
 
 | to pageobjects:  | to tests:     | to utils:  |
 | ---------------- |:-------------:|-----------:|
