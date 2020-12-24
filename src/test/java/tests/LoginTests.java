@@ -1,36 +1,18 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
-import pageobjects.BasePage;
-import pageobjects.HomePage;
-import pageobjects.LoginPage;
 
-public class LoginTests extends BaseTests {
-   @Test
-   void clickSignInButtonAndGoLoginForm() {
-       HomePage homePage = new HomePage(driver, wait);
-       homePage.openPage(); // Open main Page
+public class LoginTest extends BaseTest {
 
-       BasePage basePage = new BasePage(driver, wait);
-       basePage.clickSignIn();
-
-       LoginPage loginPage = new LoginPage(driver, wait);
-       loginPage.signInToRegisteredAccount();
-
-       loginPage.signInToNotRegisteredAccount();
-   }
-
-   // negative test: signInToNotRegisteredAccount
     @Test
-    void clickSignInButtonAndGoToLoginFormNegative() {
-       HomePage homePage = new HomePage(driver, wait);
-       homePage.openPage(); // Open main Page
+    void shouldRedirectToMyAccountPageWhenCorrectCredentialsAreUsed() {
+        // powinno przekierować do strony Moje konto kiedy używane są prawidłowe poświadczenia
+        // implementacja testu (korzystamy z LoginPage oraz z MyAccountPage)
+    }
 
-       BasePage basePage = new BasePage(driver, wait);
-       basePage.clickSignIn();
-
-       LoginPage loginPage = new LoginPage(driver, wait);
-       loginPage.signInToNotRegisteredAccount();
-       // assertion
+    @Test
+    void shouldRedirectToTheReLoginPageWhenCredentialsAreNotUsed() {
+        // powinien przekierować do ponownego logowania strony, kiedy poświadczenia nie są używane
+        // implementacja testu (korzystamy z LoginPage oraz z MyAccountPage)
     }
 }

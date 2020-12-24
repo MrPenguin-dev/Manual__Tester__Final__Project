@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ProductsPage extends BasePage {
+
     @FindBy(css = ".product_list .product-container")
     List<WebElement> productsContainers;
 
@@ -20,55 +21,29 @@ public class ProductsPage extends BasePage {
     @FindBy(className = "continue")
     WebElement continueShoppingButton;
 
-    @FindBy(linkText = "Proceed to checkout")
-    WebElement proceedCheckoutButton;
-
-    // we need create constructor to give 'static WebDriver driver;' from src/test/java/tests/BaseTest
     public ProductsPage(WebDriver driverIn, WebDriverWait waitIn) {
         super(driverIn, waitIn);
     }
 
-    public void moveMouseToProductContainer(int productIndex) { // List<WebElement> productsContainers = diver.findElements(By.cssSelector(".product_list .product-container"));
+    public void moveMouseToProductContainer(int productIndex) {
         Actions builder = new Actions(driver);
-        builder.moveToElement(productsContainers.get(productIndex)).build().perform(); // we must add ".build().perform();" every invoke moveToElement
+        builder.moveToElement(productsContainers.get(productIndex)).build().perform();
     }
 
     public void addProductToTheBasket(int productIndex) {
-        // wait until element: "addToCartButtons.get(productIndex)" will be clickable
         wait.until(ExpectedConditions.elementToBeClickable(addToCartButtons.get(productIndex)));
-        // if is clickable > click
         addToCartButtons.get(productIndex).click();
-        // wait until element: "continueShoppingButton" will be clickable
+
         wait.until(ExpectedConditions.elementToBeClickable(continueShoppingButton));
-        // if is clickable > click
         continueShoppingButton.click();
     }
 
-    public void addProductToTheBasketAndProceedCheckout(int productIndex) {
-        // wait until element: "addToCartButtons.get(productIndex)" will be clickable
-        wait.until(ExpectedConditions.elementToBeClickable(addToCartButtons.get(productIndex)));
-        // if is clickable > click
-        addToCartButtons.get(productIndex).click();
-        // wait until element: "proceedCheckoutButton" will be clickable
-        wait.until(ExpectedConditions.elementToBeClickable(proceedCheckoutButton));
-        // if is clickable > click
-        proceedCheckoutButton.click();
-        // now we see summary and we must click proceedCheckoutButton again to continue shopping
-        proceedCheckoutButton.click();
-        // now we are on LoginPage and we are ask to CREATE AN ACCOUNT or login by ALREADY REGISTERED? form
-    }
-
     public void addRandomProductToCart() {
-        Random random = new Random();
-        int productIndex = random.nextInt(productsContainers.size()); // set random number of product from showed product list
-        moveMouseToProductContainer(productIndex); // we except that sixth element from the list will be clicked // 5
-        addProductToTheBasket(productIndex); // we click on sixth element to add to the basket // 5
-    }
+        Random rnd = new Random();
+        int productIndex = rnd.nextInt(productsContainers.size());
 
-    public void addRandomProductToCartAndProceedCheckout() {
-        Random random = new Random();
-        int productIndex = random.nextInt(productsContainers.size()); // set random number of product from showed product list
-        moveMouseToProductContainer(productIndex); // we except that sixth element from the list will be clicked // 5
-        addProductToTheBasketAndProceedCheckout(productIndex); // we click on sixth element to add to the basket // 5
+        moveMouseToProductContainer(productIndex);
+
+        addProductToTheBasket(productIndex);
     }
 }
