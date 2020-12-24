@@ -12,12 +12,12 @@
 
 ## Added:
 
-| to pageobjects:  | to tests:     | to utils:  |
-| ---------------- |:-------------:|-----------:|
-| BasePage         | BaseTest      | RandomUser |
-| HomePage         | CartTest      |            |
-| LoginPage        | LoginTest     |            |
-| MyAccountPage    | MyAccountTest |            |
-| ProductsPage     | RegisterTest  |            |
-| RegisterPage     | SearchTest    |            |
-| SearchResultPage |               |            |
+| to pageobjects:       | to tests:             | to utils:  |
+| --------------------- |:---------------------:|-----------:|
+| BasePage              | BaseTest              | RandomUser |
+| HomePage              | CartTest              |            |
+| LoginPage             | LoginTest             |            |
+| ExecutionOfOrdersPage | ExecutionOfOrdersTest |            |
+| ProductsPage          | RegisterTest          |            |
+| RegisterPage          | SearchTest            |            |
+| SearchResultPage      |                       |            |
