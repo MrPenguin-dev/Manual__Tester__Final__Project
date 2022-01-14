@@ -1,13 +1,14 @@
-# Manual-Tester-Auto-Test
-## Used:	
+## For the execution of the project used:	
 1. Java 11+
 2. Maven
 3. Selenium WebDriver
 4. jUnit 5.x
 5. Page object pattern
 6. Page factory
-
-### for page:
+ 
+## Structure of project:  
+ 
+### Tests for page:
 [Automationpractice](http://automationpractice.com )
 
 ## Added:
